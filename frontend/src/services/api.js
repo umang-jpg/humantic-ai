@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.DEV 
+  ? 'http://localhost:8000' 
+  : 'https://humantic-backend-302832893677.us-central1.run.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

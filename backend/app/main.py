@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -5,10 +7,11 @@ from app.routers import auth, onboarding, research, findings, pins, ws, chat
 
 app = FastAPI(title="Humantic AI", version="0.1.0")
 
+# Allow all origins for Cloud Run cross-service communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
