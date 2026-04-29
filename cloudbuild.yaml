@@ -75,3 +75,6 @@ images:
 # Cloud Run is designed for HTTP request-driven workloads. To run Celery workers on GCP,
 # you typically deploy them to a Compute Engine instance, GKE, or Cloud Run (if you configure
 # an HTTP listener to satisfy Cloud Run's port requirement and enable "always-on CPU").
+
+options:
+  logging: CLOUD_LOGGING_ONLY
