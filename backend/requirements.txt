@@ -1,4 +1,4 @@
-﻿amqp==5.3.1
+amqp==5.3.1
 annotated-doc==0.0.4
 annotated-types==0.7.0
 anyio==4.13.0
@@ -15,6 +15,7 @@ click-repl==0.3.0
 colorama==0.4.6
 cryptography==47.0.0
 deprecation==2.1.0
+email-validator
 fastapi==0.136.1
 fsspec==2026.3.0
 google-ai-generativelanguage==0.6.15
